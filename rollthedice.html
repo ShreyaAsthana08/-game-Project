@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roll the Dice</title>
+<style>
+    body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #eacefe;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #6a0dad; 
+}
+
+.dice-image {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.dice-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #6a0dad;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dice-button:hover {
+  background-color: #4b0781; 
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Roll the Dice</h1>
+  <img src="dice1.png" alt="Dice" class="dice-image" id="diceImage">
+  <button onclick="rollDice()" class="dice-button">Roll the Dice</button>
+</div>
+<script>
+    function rollDice() {
+  const diceRoll = Math.floor(Math.random() * 6) + 1;
+  document.getElementById('diceImage').src = `dice${diceRoll}.png`;
+}
+
+</script>
+</body>
+</html>

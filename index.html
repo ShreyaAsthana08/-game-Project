@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu Page</title>
+<style>
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+h1 {
+    font-size: 3em;
+    color: rgb(255, 149, 0);
+    margin-top: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: purple;
+    font-size: 1.5em;
+    margin: 15px 0;
+    padding: 10px 20px;
+    border: 2px solid purple;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: purple;
+    color: white;
+    transform: translateY(-5px);
+}
+
+
+
+</style>
+</head>
+<body>
+ 
+
+<h1>PLAY & FUN</h1>
+<div class="menu">
+    <a href="rollthedice.html" class="menu-item">Roll the Dice</a>
+    <a href="otpgenerator.html" class="menu-item">OTP Generator</a>
+    <a href="rockpaperscissor.html" class="menu-item">Rock Paper Scissor</a>
+    <a href="todo.html" class="menu-item">To Do List</a>
+
+</div>
+
+<script>
+
+</script>
+</body>
+</html>
